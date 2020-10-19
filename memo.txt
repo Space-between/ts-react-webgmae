@@ -1,4 +1,6 @@
 //github에서 내려받은 경우 lecture폴더안에 npm install로 node_modules폴더 다운받기
+//ts파일을 컴파일해서 js파일로 만들려면 터미널의 경로를 lecture로 설정하고 npx webpack또는 npm run dev라고 입력하면 된다.
+//실행은 html파일 실행시키면 된다.
 
 /*TS + React 강좌소개*/
 
