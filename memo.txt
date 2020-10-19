@@ -1,0 +1,14 @@
+/*TS + React 강좌소개*/
+
+예전에 리액트웹게임을할때는 웹팩에다가 로더를 붙였다. 예전 리액트웹게임강좌에서는 바벨+로더를 붙여서 웹팩과 바벨을 이어줬다면
+ 이번에는 타입스크립트를 사용하기 때문에 웹팩과 타입스크립트를 이어줄것이다. 타입스크립트에서는 로더가 크게 두가지있다. 그중 하나가 ts-loader가 있고
+ 다른 하나는 awesome-typescript-loader가 있는데 이번시간에는 awesome-typescript-loader를 사용하겠다. 두개의 차이점은 awesome-typescript-loader같은경우에는
+ useBabel이라는 것을 통해서 바벨과 함께 사용할 수 있다.
+ 
+ react가 js로 만들어졌기 때문에 일반적인 react는 typescript가 읽지 못한다. 따라서 npx create-react-app --typescript로 프로젝트를 만드는게 아니라면 
+ npm i @types/react @types/react-dom이렇게 @types가 붙여진 react와 react-dom을 각각 설치해야 한다.
+
+ /*TS + React 기본 타입스크립트 세팅하기*/
+
+참고로 webpack.config.js파일 안에 있는 entry, module, plugins, output이 4가지의 기능이 tsc-watch의 기능과 거의 유사하다고 볼 수 있다.
+
