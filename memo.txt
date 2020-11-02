@@ -45,4 +45,14 @@ const onChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => { //use
 
 /*끝말잇기 class 타이핑과 q&a*/
 
-createRef, useRef, useState, useCallback모두 제네릭 자리가 있어서 타입지정을 할 수 있게 되어있다. class빙식에서 props와 state 타입지정할 때 제네릭사용하는 것도 마찬가지이다. 
+createRef, useRef, useState, useCallback모두 제네릭 자리가 있어서 타입지정을 할 수 있게 되어있다. class빙식에서 props와 state 타입지정할 때 제네릭사용하는 것도 마찬가지이다.
+
+/*setTimeout, useRef 타이핑*/
+
+제네릭의 역할은 타입이 제대로 안잡혔을때 수동으로 잡아주는 게 제네릭의 역할이다.
+
+const [tries, setTries] = useState<TryInfo[]>([]); //스테이트가 처음에 빈 배열일때에는 타입추론이 안될 수 있어서 타입을 제네릭으로 지정해줘야 한다.
+
+useCallback사용할때는 useCallback안에서 사용하는 state들은 전부 useCallback의 배열안에 넣어줘야 한다.
+
+useCallback에 마우스를 올리면 제네릭자리가 뭐가 되야하는지 힌트가 나온다.

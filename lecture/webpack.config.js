@@ -23,5 +23,6 @@ module.exports = {
     output: { //그렇게 위의 과정을 거쳐서 만들어진 app.jsx를 뽑아낸다. 뽑아내는건 output설정에서 한다.
         filename: 'app.js',
         path: path.join(__dirname, 'dist'), //path를 이렇게하고 npx webpack으로 웹팩을 실행하면 client.tsx가 위에 설명한 과정을 거치고 웹팩처리가 되어서 dist라는 폴더가 생기고 dist폴더안에 app.jsx가 들어있을 것이다.
+        publicPath: './dist',
     }
 }
